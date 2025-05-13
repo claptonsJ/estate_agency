@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: EstateAgency
-Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Real Estate Web Development Project for De Ambassadors Estate Agency, Uyo, Akwa Ibom State, Nigeria.
