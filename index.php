@@ -193,7 +193,7 @@
 
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-          <div class="carousel-container">
+          <div class="carousel-container" >
 
               <div class="search-container">
                 <input type="text" class="search-input" placeholder="Search property...">
@@ -721,7 +721,7 @@
         tabElements['all'].classList.remove('active');
         activeTabs['all'] = false;
 
-        const panel = document.getElementById(id);
+        const panel = document.querySelector(id);
         const tab = tabElements[id];
 
         // Increase click count

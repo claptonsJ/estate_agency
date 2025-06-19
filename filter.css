@@ -3,10 +3,20 @@ body {
   padding: 20px;
   background-color: #f4f4f4;
 }
-
+.carousel-container{
+  position: relative;
+}
 .filter-container {
   display: inline-block; /* container only as wide as its content */
+  position: relative;
+  position: absolute;
+  top: 55%;
 }
+
+
+/* .filter-container .filter-panel{
+  position: absolute;
+} */
 
 .tab-bar {
   display: flex;
