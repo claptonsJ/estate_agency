@@ -34,6 +34,8 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="starter-page-page">
@@ -89,41 +91,13 @@
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
           <div class="carousel-container">
-            <div>
-              <p>Doral, Florida</p>
-              <h2><span>204</span> Olive Road Two</h2>
-              <a href="property-single.html" class="btn-get-started">rent | $ 12.000</a>
-            </div>
-          </div>
-        </div><!-- End Carousel Item -->
 
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-          <div class="carousel-container">
-            <div>
-              <p>Doral, Florida</p>
-              <h2><span>247</span> Venda Road Five</h2>
-              <a href="property-single.html" class="btn-get-started">sale | $ 356.000</a>
-            </div>
-          </div>
-        </div><!-- End Carousel Item -->
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search property...">
+                <i class="fas fa-search search-icon"></i>
+              </div>
 
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-          <div class="carousel-container">
-            <div>
-              <p>Doral, Florida</p>
-              <h2><span>247</span> Vitra Road three</h2>
-              <!-- <a href="property-single.html" class="btn-get-started">rent | $ 3.000</a> -->
-              <input  class="btn-get-started" type="text">
-            </div>
 
-            <style>
-              .btn-get-started{
-                width: 650px;
-                background: none;
-              }
-            </style>
               <div class="filter-container">
                 <div class="tab-bar">
                   <div class="tab" onclick="handleTabClick('all')">All</div>
@@ -161,11 +135,154 @@
                   <label><input type="radio" name="brand" value="Brand D"> Brand D</label>
                 </div>
               </div>
+
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="carousel-container">
+
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search property...">
+                <i class="fas fa-search search-icon"></i>
+              </div>
+
+
+              <div class="filter-container">
+                <div class="tab-bar">
+                  <div class="tab" onclick="handleTabClick('all')">All</div>
+                  <div class="tab" onclick="handleTabClick('price')">Price</div>
+                  <div class="tab" onclick="handleTabClick('range')">Range</div>
+                  <div class="tab" onclick="handleTabClick('availability')">Availability</div>
+                  <div class="tab" onclick="handleTabClick('brand')">Brand</div>
+                </div>
+
+                <div id="price" class="filter-panel">
+                  <label><input type="radio" name="price" value="Under $50"> Under $50</label><br>
+                  <label><input type="radio" name="price" value="$50 - $100"> $50 - $100</label><br>
+                  <label><input type="radio" name="price" value="$100 - $200"> $100 - $200</label><br>
+                  <label><input type="radio" name="price" value="Over $200"> Over $200</label>
+                </div>
+
+                <div id="range" class="filter-panel">
+                  <label><input type="radio" name="range" value="Today"> Today</label><br>
+                  <label><input type="radio" name="range" value="This Week"> This Week</label><br>
+                  <label><input type="radio" name="range" value="This Month"> This Month</label><br>
+                  <label><input type="radio" name="range" value="This Year"> This Year</label>
+                </div>
+
+                <div id="availability" class="filter-panel">
+                  <label><input type="radio" name="availability" value="In Stock"> In Stock</label><br>
+                  <label><input type="radio" name="availability" value="Out of Stock"> Out of Stock</label><br>
+                  <label><input type="radio" name="availability" value="Preorder"> Preorder</label><br>
+                  <label><input type="radio" name="availability" value="Discontinued"> Discontinued</label>
+                </div>
+
+                <div id="brand" class="filter-panel">
+                  <label><input type="radio" name="brand" value="Brand A"> Brand A</label><br>
+                  <label><input type="radio" name="brand" value="Brand B"> Brand B</label><br>
+                  <label><input type="radio" name="brand" value="Brand C"> Brand C</label><br>
+                  <label><input type="radio" name="brand" value="Brand D"> Brand D</label>
+                </div>
+              </div>
+
+
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="carousel-container">
+
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search property...">
+                <i class="fas fa-search search-icon"></i>
+              </div>
+
+
+              <div class="filter-container">
+                <div class="tab-bar">
+                  <div class="tab" onclick="handleTabClick('all')">All</div>
+                  <div class="tab" onclick="handleTabClick('price')">Price</div>
+                  <div class="tab" onclick="handleTabClick('range')">Range</div>
+                  <div class="tab" onclick="handleTabClick('availability')">Availability</div>
+                  <div class="tab" onclick="handleTabClick('brand')">Brand</div>
+                </div>
+
+                <div id="price" class="filter-panel">
+                  <label><input type="radio" name="price" value="Under $50"> Under $50</label><br>
+                  <label><input type="radio" name="price" value="$50 - $100"> $50 - $100</label><br>
+                  <label><input type="radio" name="price" value="$100 - $200"> $100 - $200</label><br>
+                  <label><input type="radio" name="price" value="Over $200"> Over $200</label>
+                </div>
+
+                <div id="range" class="filter-panel">
+                  <label><input type="radio" name="range" value="Today"> Today</label><br>
+                  <label><input type="radio" name="range" value="This Week"> This Week</label><br>
+                  <label><input type="radio" name="range" value="This Month"> This Month</label><br>
+                  <label><input type="radio" name="range" value="This Year"> This Year</label>
+                </div>
+
+                <div id="availability" class="filter-panel">
+                  <label><input type="radio" name="availability" value="In Stock"> In Stock</label><br>
+                  <label><input type="radio" name="availability" value="Out of Stock"> Out of Stock</label><br>
+                  <label><input type="radio" name="availability" value="Preorder"> Preorder</label><br>
+                  <label><input type="radio" name="availability" value="Discontinued"> Discontinued</label>
+                </div>
+
+                <div id="brand" class="filter-panel">
+                  <label><input type="radio" name="brand" value="Brand A"> Brand A</label><br>
+                  <label><input type="radio" name="brand" value="Brand B"> Brand B</label><br>
+                  <label><input type="radio" name="brand" value="Brand C"> Brand C</label><br>
+                  <label><input type="radio" name="brand" value="Brand D"> Brand D</label>
+                </div>
+              </div>
+
           </div>
         </div><!-- End Carousel Item -->
 
 
+            <style>
+              .btn-get-started{
+                width: 650px;
+                background: none;
+              }
+              .search-container {
+                position: relative;
+                width: 50vw;
+                height: 4rem;
+                margin-bottom: 1rem;
+              }
 
+              .search-input {
+                width: 100%;
+                height: 100%;
+                padding: 10px 10px 10px 15px;
+                font-size: 1.5rem;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border: 4px solid #4817ce;
+                border-radius: 2rem;
+                background-color: transparent;
+                color: white;
+                outline: none;
+                display: flex;
+                justify-content: end;
+              }
+
+              .search-input::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+              }
+
+              .search-container .search-icon {
+                position: absolute;
+                right: 5%;
+                top: 30%;
+                color: white;
+                pointer-events: none;
+                font-size: 2rem;
+              }
+            </style>
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
