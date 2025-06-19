@@ -26,7 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="filter.css">
   <!-- =======================================================
   * Template Name: EstateAgency
   * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
@@ -114,10 +114,58 @@
             <div>
               <p>Doral, Florida</p>
               <h2><span>247</span> Vitra Road three</h2>
-              <a href="property-single.html" class="btn-get-started">rent | $ 3.000</a>
+              <!-- <a href="property-single.html" class="btn-get-started">rent | $ 3.000</a> -->
+              <input  class="btn-get-started" type="text">
             </div>
+
+            <style>
+              .btn-get-started{
+                width: 650px;
+                background: none;
+              }
+            </style>
+              <div class="filter-container">
+                <div class="tab-bar">
+                  <div class="tab" onclick="handleTabClick('all')">All</div>
+                  <div class="tab" onclick="handleTabClick('price')">Price</div>
+                  <div class="tab" onclick="handleTabClick('range')">Range</div>
+                  <div class="tab" onclick="handleTabClick('availability')">Availability</div>
+                  <div class="tab" onclick="handleTabClick('brand')">Brand</div>
+                </div>
+
+                <div id="price" class="filter-panel">
+                  <label><input type="radio" name="price" value="Under $50"> Under $50</label><br>
+                  <label><input type="radio" name="price" value="$50 - $100"> $50 - $100</label><br>
+                  <label><input type="radio" name="price" value="$100 - $200"> $100 - $200</label><br>
+                  <label><input type="radio" name="price" value="Over $200"> Over $200</label>
+                </div>
+
+                <div id="range" class="filter-panel">
+                  <label><input type="radio" name="range" value="Today"> Today</label><br>
+                  <label><input type="radio" name="range" value="This Week"> This Week</label><br>
+                  <label><input type="radio" name="range" value="This Month"> This Month</label><br>
+                  <label><input type="radio" name="range" value="This Year"> This Year</label>
+                </div>
+
+                <div id="availability" class="filter-panel">
+                  <label><input type="radio" name="availability" value="In Stock"> In Stock</label><br>
+                  <label><input type="radio" name="availability" value="Out of Stock"> Out of Stock</label><br>
+                  <label><input type="radio" name="availability" value="Preorder"> Preorder</label><br>
+                  <label><input type="radio" name="availability" value="Discontinued"> Discontinued</label>
+                </div>
+
+                <div id="brand" class="filter-panel">
+                  <label><input type="radio" name="brand" value="Brand A"> Brand A</label><br>
+                  <label><input type="radio" name="brand" value="Brand B"> Brand B</label><br>
+                  <label><input type="radio" name="brand" value="Brand C"> Brand C</label><br>
+                  <label><input type="radio" name="brand" value="Brand D"> Brand D</label>
+                </div>
+              </div>
           </div>
         </div><!-- End Carousel Item -->
+
+
+
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -129,7 +177,10 @@
 
         <ol class="carousel-indicators"></ol>
 
+        
+
       </div>
+
 
     </section><!-- /Hero Section -->
 
@@ -148,6 +199,7 @@
           <div class="col-lg-6" data-aos="fade-up">
             <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div> -->
+ 
 
     </section>
 
@@ -509,6 +561,83 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+
+    <script>
+      const tabs = document.querySelectorAll('.tab');
+      const panels = document.querySelectorAll('.filter-panel');
+      const activeTabs = {
+        all: false,
+        price: false,
+        range: false,
+        availability: false,
+        brand: false
+      };
+
+      const clickStates = {
+        price: 0,
+        range: 0,
+        availability: 0,
+        brand: 0
+      };
+
+      function handleTabClick(id) {
+        const tabElements = {
+          all: document.querySelector('.tab:nth-child(1)'),
+          price: document.querySelector('.tab:nth-child(2)'),
+          range: document.querySelector('.tab:nth-child(3)'),
+          availability: document.querySelector('.tab:nth-child(4)'),
+          brand: document.querySelector('.tab:nth-child(5)')
+        };
+
+        if (id === 'all') {
+          // Reset all
+          panels.forEach(panel => panel.style.display = 'none');
+          tabs.forEach(tab => tab.classList.remove('active'));
+          Object.keys(activeTabs).forEach(key => activeTabs[key] = false);
+          Object.keys(clickStates).forEach(key => clickStates[key] = 0);
+          tabElements['all'].classList.add('active');
+          activeTabs['all'] = true;
+          return;
+        }
+
+        // Deselect "all" if another filter is clicked
+        tabElements['all'].classList.remove('active');
+        activeTabs['all'] = false;
+
+        const panel = document.getElementById(id);
+        const tab = tabElements[id];
+
+        // Increase click count
+        clickStates[id] = (clickStates[id] + 1) % 3;
+
+        if (clickStates[id] === 1) {
+          // First click: open dropdown & highlight
+          panels.forEach(p => p.style.display = 'none');
+          panel.style.display = 'block';
+          tab.classList.add('active');
+          activeTabs[id] = true;
+        } else if (clickStates[id] === 2) {
+          // Second click: hide dropdown, keep highlighted
+          panel.style.display = 'none';
+          tab.classList.add('active');
+        } else {
+          // Third click: hide and un-highlight
+          panel.style.display = 'none';
+          tab.classList.remove('active');
+          activeTabs[id] = false;
+        }
+
+        // Reset other tab clickStates if not clicked
+        Object.keys(clickStates).forEach(key => {
+          if (key !== id) clickStates[key] = 0;
+        });
+
+        // Hide other panels
+        panels.forEach(p => {
+          if (p.id !== id) p.style.display = 'none';
+        });
+      }
+    </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
