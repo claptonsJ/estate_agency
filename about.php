@@ -82,7 +82,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
+    <!-- <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
@@ -101,10 +101,12 @@
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>  -->
+    
+    <!-- End Page Title -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section" style>
 
       <div class="container">
 

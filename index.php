@@ -86,7 +86,9 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
@@ -98,43 +100,7 @@
               </div>
 
 
-              <div class="filter-container">
-                <div class="tab-bar">
-                  <div class="tab" onclick="handleTabClick('all')">All</div>
-                  <div class="tab" onclick="handleTabClick('price')">Price</div>
-                  <div class="tab" onclick="handleTabClick('range')">Range</div>
-                  <div class="tab" onclick="handleTabClick('availability')">Availability</div>
-                  <div class="tab" onclick="handleTabClick('brand')">Brand</div>
-                </div>
-
-                <div id="price" class="filter-panel">
-                  <label><input type="radio" name="price" value="Under $50"> Under $50</label><br>
-                  <label><input type="radio" name="price" value="$50 - $100"> $50 - $100</label><br>
-                  <label><input type="radio" name="price" value="$100 - $200"> $100 - $200</label><br>
-                  <label><input type="radio" name="price" value="Over $200"> Over $200</label>
-                </div>
-
-                <div id="range" class="filter-panel">
-                  <label><input type="radio" name="range" value="Today"> Today</label><br>
-                  <label><input type="radio" name="range" value="This Week"> This Week</label><br>
-                  <label><input type="radio" name="range" value="This Month"> This Month</label><br>
-                  <label><input type="radio" name="range" value="This Year"> This Year</label>
-                </div>
-
-                <div id="availability" class="filter-panel">
-                  <label><input type="radio" name="availability" value="In Stock"> In Stock</label><br>
-                  <label><input type="radio" name="availability" value="Out of Stock"> Out of Stock</label><br>
-                  <label><input type="radio" name="availability" value="Preorder"> Preorder</label><br>
-                  <label><input type="radio" name="availability" value="Discontinued"> Discontinued</label>
-                </div>
-
-                <div id="brand" class="filter-panel">
-                  <label><input type="radio" name="brand" value="Brand A"> Brand A</label><br>
-                  <label><input type="radio" name="brand" value="Brand B"> Brand B</label><br>
-                  <label><input type="radio" name="brand" value="Brand C"> Brand C</label><br>
-                  <label><input type="radio" name="brand" value="Brand D"> Brand D</label>
-                </div>
-              </div>
+             <div id="filters1" class="filter-container"></div>
 
           </div>
         </div><!-- End Carousel Item -->
@@ -149,43 +115,7 @@
               </div>
 
 
-              <div class="filter-container">
-                <div class="tab-bar">
-                  <div class="tab" onclick="handleTabClick('all')">All</div>
-                  <div class="tab" onclick="handleTabClick('price')">Price</div>
-                  <div class="tab" onclick="handleTabClick('range')">Range</div>
-                  <div class="tab" onclick="handleTabClick('availability')">Availability</div>
-                  <div class="tab" onclick="handleTabClick('brand')">Brand</div>
-                </div>
-
-                <div id="price" class="filter-panel">
-                  <label><input type="radio" name="price" value="Under $50"> Under $50</label><br>
-                  <label><input type="radio" name="price" value="$50 - $100"> $50 - $100</label><br>
-                  <label><input type="radio" name="price" value="$100 - $200"> $100 - $200</label><br>
-                  <label><input type="radio" name="price" value="Over $200"> Over $200</label>
-                </div>
-
-                <div id="range" class="filter-panel">
-                  <label><input type="radio" name="range" value="Today"> Today</label><br>
-                  <label><input type="radio" name="range" value="This Week"> This Week</label><br>
-                  <label><input type="radio" name="range" value="This Month"> This Month</label><br>
-                  <label><input type="radio" name="range" value="This Year"> This Year</label>
-                </div>
-
-                <div id="availability" class="filter-panel">
-                  <label><input type="radio" name="availability" value="In Stock"> In Stock</label><br>
-                  <label><input type="radio" name="availability" value="Out of Stock"> Out of Stock</label><br>
-                  <label><input type="radio" name="availability" value="Preorder"> Preorder</label><br>
-                  <label><input type="radio" name="availability" value="Discontinued"> Discontinued</label>
-                </div>
-
-                <div id="brand" class="filter-panel">
-                  <label><input type="radio" name="brand" value="Brand A"> Brand A</label><br>
-                  <label><input type="radio" name="brand" value="Brand B"> Brand B</label><br>
-                  <label><input type="radio" name="brand" value="Brand C"> Brand C</label><br>
-                  <label><input type="radio" name="brand" value="Brand D"> Brand D</label>
-                </div>
-              </div>
+            <div id="filters2" class="filter-container"></div>
 
 
           </div>
@@ -200,89 +130,12 @@
                 <i class="fas fa-search search-icon"></i>
               </div>
 
-
-              <div class="filter-container">
-                <div class="tab-bar">
-                  <div class="tab" onclick="handleTabClick('all')">All</div>
-                  <div class="tab" onclick="handleTabClick('price')">Price</div>
-                  <div class="tab" onclick="handleTabClick('range')">Range</div>
-                  <div class="tab" onclick="handleTabClick('availability')">Availability</div>
-                  <div class="tab" onclick="handleTabClick('brand')">Brand</div>
-                </div>
-
-                <div id="price" class="filter-panel">
-                  <label><input type="radio" name="price" value="Under $50"> Under $50</label><br>
-                  <label><input type="radio" name="price" value="$50 - $100"> $50 - $100</label><br>
-                  <label><input type="radio" name="price" value="$100 - $200"> $100 - $200</label><br>
-                  <label><input type="radio" name="price" value="Over $200"> Over $200</label>
-                </div>
-
-                <div id="range" class="filter-panel">
-                  <label><input type="radio" name="range" value="Today"> Today</label><br>
-                  <label><input type="radio" name="range" value="This Week"> This Week</label><br>
-                  <label><input type="radio" name="range" value="This Month"> This Month</label><br>
-                  <label><input type="radio" name="range" value="This Year"> This Year</label>
-                </div>
-
-                <div id="availability" class="filter-panel">
-                  <label><input type="radio" name="availability" value="In Stock"> In Stock</label><br>
-                  <label><input type="radio" name="availability" value="Out of Stock"> Out of Stock</label><br>
-                  <label><input type="radio" name="availability" value="Preorder"> Preorder</label><br>
-                  <label><input type="radio" name="availability" value="Discontinued"> Discontinued</label>
-                </div>
-
-                <div id="brand" class="filter-panel">
-                  <label><input type="radio" name="brand" value="Brand A"> Brand A</label><br>
-                  <label><input type="radio" name="brand" value="Brand B"> Brand B</label><br>
-                  <label><input type="radio" name="brand" value="Brand C"> Brand C</label><br>
-                  <label><input type="radio" name="brand" value="Brand D"> Brand D</label>
-                </div>
-              </div>
+              <div id="filters3" class="filter-container"></div>
 
           </div>
         </div><!-- End Carousel Item -->
 
 
-            <style>
-              .btn-get-started{
-                width: 650px;
-                background: none;
-              }
-              .search-container {
-                position: relative;
-                width: 50vw;
-                height: 4rem;
-                margin-bottom: 1rem;
-              }
-
-              .search-input {
-                width: 100%;
-                height: 100%;
-                padding: 10px 10px 10px 15px;
-                font-size: 1.5rem;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                border: 4px solid #4817ce;
-                border-radius: 2rem;
-                background-color: transparent;
-                color: white;
-                outline: none;
-                display: flex;
-                justify-content: end;
-              }
-
-              .search-input::placeholder {
-                color: rgba(255, 255, 255, 0.5);
-              }
-
-              .search-container .search-icon {
-                position: absolute;
-                right: 5%;
-                top: 30%;
-                color: white;
-                pointer-events: none;
-                font-size: 2rem;
-              }
-            </style>
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -296,10 +149,192 @@
 
         
 
-      </div>
+    </div>
 
+      <style>
+        .search-container {
+          position: relative;
+          width: 60vw;
+          height: 4rem;
+          margin: 0 auto 3rem auto;
+        }
+
+        .search-input {
+          width: 100%;
+          height: 100%;
+          padding: 10px 15px;
+          font-size: 1.5rem;
+          border: 4px solid #007bff;
+          border-radius: 2rem;
+          background-color: rgba(0, 0, 0, 0.4);
+          color: white;
+          outline: none;
+        }
+
+        .search-input::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        .search-icon {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 1.8rem;
+          color: white;
+          pointer-events: none;
+        }
+
+        .filter-container {
+          width: 90vw;
+          max-width: 1000px;
+          margin: 2rem auto;
+        }
+
+        .tab-bar {
+          display: flex;
+          justify-content: space-around;
+          background: rgba(0, 0, 0, 0.4);
+          border-radius: 1rem;
+          padding: 0.5rem;
+        }
+
+        .tab {
+          padding: 0.8rem 1.2rem;
+          background: transparent;
+          border: none;
+          border-radius: 1.5rem;
+          color: white;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        .tab.active {
+          background-color: #007bff;
+          font-weight: bold;
+        }
+
+        .filter-panel {
+          display: none;
+          margin-top: 1rem;
+          padding: 1rem;
+          background: linear-gradient(to bottom, #2c3e50, #34495e);
+          border-radius: 0.5rem;
+          max-height: 14rem; /* Show approx 6 items */
+          overflow-y: auto;
+        }
+
+        .filter-panel.active {
+          display: block;
+        }
+
+        .filter-panel label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+
+        /* Optional: Scrollbar styling */
+        .filter-panel::-webkit-scrollbar {
+          width: 6px;
+        }
+
+        .filter-panel::-webkit-scrollbar-thumb {
+          background-color: #007bff;
+          border-radius: 10px;
+        }
+
+        .filter-panel::-webkit-scrollbar-track {
+          background: transparent;
+        }
+      </style>
+
+     <script>
+          const filterData = {
+            price: `
+              <div class="filter-panel active">
+                <label><input type="radio" name="price" value="Under ₦100k"> Under ₦100k</label>
+                <label><input type="radio" name="price" value="₦100k - ₦500k"> ₦100k - ₦500k</label>
+                <label><input type="radio" name="price" value="₦500k - ₦1M"> ₦500k - ₦1M</label>
+                <label><input type="radio" name="price" value="₦1M - ₦5M"> ₦1M - ₦5M</label>
+                <label><input type="radio" name="price" value="₦5M - ₦10M"> ₦5M - ₦10M</label>
+                <label><input type="radio" name="price" value="₦10M - ₦50M"> ₦10M - ₦50M</label>
+                <label><input type="radio" name="price" value="Above ₦50M"> Above ₦50M</label>
+              </div>`,
+
+            location: `
+              <div class="filter-panel active">
+                <label><input type="radio" name="location" value="Lagos"> Lagos</label>
+                <label><input type="radio" name="location" value="Abuja"> Abuja</label>
+                <label><input type="radio" name="location" value="Port Harcourt"> Port Harcourt</label>
+                <label><input type="radio" name="location" value="Uyo"> Uyo</label>
+                <label><input type="radio" name="location" value="Enugu"> Enugu</label>
+                <label><input type="radio" name="location" value="Benin City"> Benin City</label>
+                <label><input type="radio" name="location" value="Ibadan"> Ibadan</label>
+                <label><input type="radio" name="location" value="Owerri"> Owerri</label>
+                <label><input type="radio" name="location" value="Kano"> Kano</label>
+                <label><input type="radio" name="location" value="Kaduna"> Kaduna</label>
+              </div>`,
+
+            category: `
+              <div class="filter-panel active">
+                <label><input type="radio" name="category" value="Apartment"> Apartment</label>
+                <label><input type="radio" name="category" value="Duplex"> Duplex</label>
+                <label><input type="radio" name="category" value="Bungalow"> Bungalow</label>
+                <label><input type="radio" name="category" value="Office Space"> Office Space</label>
+                <label><input type="radio" name="category" value="Land"> Land</label>
+                <label><input type="radio" name="category" value="Shop"> Shop</label>
+              </div>`,
+
+            type: `
+              <div class="filter-panel active">
+                <label><input type="radio" name="type" value="Rent"> Rent</label>
+                <label><input type="radio" name="type" value="Lease"> Lease</label>
+                <label><input type="radio" name="type" value="Sale"> Sale</label>
+              </div>`
+          };
+
+          const filterTypes = ['all', 'price', 'location', 'category', 'type'];
+          const filterContainers = ['filters1', 'filters2', 'filters3'];
+          const activeTab = { value: 'all' }; // shared state
+
+          function renderFilterGroup(containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = `
+              <div class="tab-bar">
+                ${filterTypes.map(type => `
+                  <div class="tab ${type === activeTab.value ? 'active' : ''}" data-type="${type}" onclick="handleTabClick('${type}')">
+                    ${type === 'price' ? 'Price Range' : type.charAt(0).toUpperCase() + type.slice(1)}
+                  </div>
+                `).join('')}
+              </div>
+              <div class="filter-output">
+                ${activeTab.value !== 'all' ? filterData[activeTab.value] : ''}
+              </div>
+            `;
+          }
+
+          function handleTabClick(type) {
+            activeTab.value = type;
+            filterContainers.forEach(id => renderFilterGroup(id));
+          }
+
+          // Initial render
+          filterContainers.forEach(id => renderFilterGroup(id));
+      </script>
 
     </section><!-- /Hero Section -->
+
+      <script>
+        console.log("it is working...");
+
+        let e = document.querySelectorAll(".price"); 
+        console.log(e);
+        
+        
+      </script>
 
     <section id="about" class="about section">
 
@@ -679,82 +714,7 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-    <script>
-      const tabs = document.querySelectorAll('.tab');
-      const panels = document.querySelectorAll('.filter-panel');
-      const activeTabs = {
-        all: false,
-        price: false,
-        range: false,
-        availability: false,
-        brand: false
-      };
 
-      const clickStates = {
-        price: 0,
-        range: 0,
-        availability: 0,
-        brand: 0
-      };
-
-      function handleTabClick(id) {
-        const tabElements = {
-          all: document.querySelector('.tab:nth-child(1)'),
-          price: document.querySelector('.tab:nth-child(2)'),
-          range: document.querySelector('.tab:nth-child(3)'),
-          availability: document.querySelector('.tab:nth-child(4)'),
-          brand: document.querySelector('.tab:nth-child(5)')
-        };
-
-        if (id === 'all') {
-          // Reset all
-          panels.forEach(panel => panel.style.display = 'none');
-          tabs.forEach(tab => tab.classList.remove('active'));
-          Object.keys(activeTabs).forEach(key => activeTabs[key] = false);
-          Object.keys(clickStates).forEach(key => clickStates[key] = 0);
-          tabElements['all'].classList.add('active');
-          activeTabs['all'] = true;
-          return;
-        }
-
-        // Deselect "all" if another filter is clicked
-        tabElements['all'].classList.remove('active');
-        activeTabs['all'] = false;
-
-        const panel = document.querySelector(id);
-        const tab = tabElements[id];
-
-        // Increase click count
-        clickStates[id] = (clickStates[id] + 1) % 3;
-
-        if (clickStates[id] === 1) {
-          // First click: open dropdown & highlight
-          panels.forEach(p => p.style.display = 'none');
-          panel.style.display = 'block';
-          tab.classList.add('active');
-          activeTabs[id] = true;
-        } else if (clickStates[id] === 2) {
-          // Second click: hide dropdown, keep highlighted
-          panel.style.display = 'none';
-          tab.classList.add('active');
-        } else {
-          // Third click: hide and un-highlight
-          panel.style.display = 'none';
-          tab.classList.remove('active');
-          activeTabs[id] = false;
-        }
-
-        // Reset other tab clickStates if not clicked
-        Object.keys(clickStates).forEach(key => {
-          if (key !== id) clickStates[key] = 0;
-        });
-
-        // Hide other panels
-        panels.forEach(p => {
-          if (p.id !== id) p.style.display = 'none';
-        });
-      }
-    </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
